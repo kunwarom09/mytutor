@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Gochi+Hand&family=Patrick+Hand&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #5b6270;
+  --bg-page: #ffffff;
+  --bg-soft: #f7f9fc;
+  --primary-blue: #0a5cff;
+  --primary-blue-hover: #004bd9;
+  --accent-yellow: #ffd23f;
+  --accent-yellow-hover: #f5c428;
+  --accent-orange: #f26a0f;
+  --text-heading: #111318;
+  --text-body: #5b6270;
+  --card-bg: #ffffff;
+  --card-border: #e8ecf2;
+
+  /* Pastel Icon Tiles */
+  --pastel-blue: #dbe8ff;
+  --pastel-green: #d9f5c9;
+  --pastel-purple: #e8dcff;
+  --pastel-peach: #ffe3d1;
+  --pastel-teal: #c9f3f0;
+  --pastel-yellow: #fff1a8;
+
+  /* Shadows */
+  --shadow-card: 0 4px 20px rgba(20, 40, 90, 0.07);
+  --shadow-card-hover: 0 8px 30px rgba(20, 40, 90, 0.12);
+}
+
+body {
+  background-color: #ffffff;
+  color: #5b6270;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #111318;
+  letter-spacing: -0.02em;
+}
+
+/* Typography Utilities */
+.font-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-gochi {
+  font-family: 'Gochi Hand', 'Patrick Hand', cursive, sans-serif;
+}
+
+.eyebrow-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f26a0f;
+  display: inline-block;
+}
+
+/* Button Pills */
+.btn-pill-yellow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background-color: #ffd23f;
+  color: #111318;
+  font-weight: 700;
+  padding: 0.75rem 1.75rem;
+  font-size: 0.9375rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(255, 210, 63, 0.25);
+  cursor: pointer;
+}
+
+.btn-pill-yellow:hover {
+  background-color: #f5c428;
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 14px rgba(255, 210, 63, 0.38);
+}
+
+.btn-pill-blue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background-color: #0a5cff;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0.625rem 1.5rem;
+  font-size: 0.9375rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 10px rgba(10, 92, 255, 0.25);
+  cursor: pointer;
+}
+
+.btn-pill-blue:hover {
+  background-color: #004bd9;
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 16px rgba(10, 92, 255, 0.38);
+}
+
+.btn-pill-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  color: #111318;
+  font-weight: 600;
+  padding: 0.625rem 1.5rem;
+  font-size: 0.9375rem;
+  border: 1px solid #e8ecf2;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.btn-pill-white:hover {
+  background-color: #f7f9fc;
+  border-color: #d1d5db;
+  transform: translateY(-1.5px);
+}
+
+/* Card System */
+.card-theme {
+  background-color: #ffffff;
+  border: 1px solid #e8ecf2;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(20, 40, 90, 0.07);
+  transition: all 0.25s ease;
+}
+
+.card-theme:hover {
+  box-shadow: 0 8px 30px rgba(20, 40, 90, 0.12);
+}
+
+/* Pastel Icon Tiles */
+.tile-blue {
+  background-color: #dbe8ff;
+  color: #0a5cff;
+}
+
+.tile-green {
+  background-color: #d9f5c9;
+  color: #16a34a;
+}
+
+.tile-purple {
+  background-color: #e8dcff;
+  color: #7c3aed;
+}
+
+.tile-peach {
+  background-color: #ffe3d1;
+  color: #ea580c;
+}
+
+.tile-teal {
+  background-color: #c9f3f0;
+  color: #0d9488;
+}
+
+.tile-yellow {
+  background-color: #fff1a8;
+  color: #ca8a04;
+}
+
+/* Cutout Image Shapes */
+.img-cutout-dome {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.img-cutout-pill {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}

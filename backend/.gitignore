@@ -1,0 +1,21 @@
+# Dependencies
+/vendor/
+
+# Environment files
+.env
+.env.backup
+.env.*
+!.env.example
+
+# Logs and cache
+/storage/logs/*.log
+/storage/logs/ratelimit/*
+!/storage/logs/ratelimit/.gitkeep
+!/storage/logs/.gitkeep
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
